@@ -1,0 +1,17 @@
+
+cd to /dd/shows/LEMONY/user/work.ssreeram/git, then 
+$ git clone http://dd-git.d2.com/india/sgtk_config.git sgtk_config --recursive
+
+then cd to sgtk_config
+
+---> work on tk-multi-shotgunpanel/ and tk-multi-loader2 modules
+
+ --- check --> vi config/hooks/tk-multi-loader2/tk-nuke_actions.py 
+ 
+make install CONTEXT=user -- to use package.
+                          -- Will list out version and use this in --withs to override
+                          
+Example : nuke --with sgtk_config=2.4.6 --dd test=user
+
+
+
